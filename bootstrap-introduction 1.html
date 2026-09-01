@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechNova - Digital Solutions</title>
+
+    <!-- Bootstrap 5.3 CSS CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            color: white;
+            padding: 110px 0;
+        }
+
+        .hero-title {
+            font-size: 55px;
+            font-weight: 700;
+        }
+
+        .hero-text {
+            font-size: 19px;
+            line-height: 1.7;
+        }
+
+        .feature-card {
+            transition: 0.3s;
+            border: none;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature-icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            font-size: 28px;
+            background-color: #e7f1ff;
+            color: #0d6efd;
+        }
+
+        .about-section {
+            background-color: white;
+        }
+
+        .stat-box {
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #f8f9fa;
+        }
+
+        .stat-number {
+            font-size: 38px;
+            font-weight: 700;
+            color: #0d6efd;
+        }
+
+        .cta-section {
+            background: #212529;
+            color: white;
+        }
+
+        footer {
+            background: #111;
+            color: #adb5bd;
+        }
+
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 75px 0;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 40px;
+            }
+
+            .hero-text {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold fs-4 text-primary" href="#">
+                <i class="bi bi-cpu"></i>
+                TechNova
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+
+                        <a href="#contact"
+                           class="btn btn-primary px-4">
+                            Get Started
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Hero Content -->
+                <div class="col-lg-7">
+
+                    <span class="badge bg-light text-primary px-3 py-2 mb-3">
+                        Next Generation Technology
+                    </span>
+
+                    <h1 class="hero-title mb-4">
+                        Build Your Digital Future With TechNova
+                    </h1>
+
+                    <p class="hero-text mb-4">
+                        We help businesses transform their ideas into
+                        powerful digital experiences using modern
+                        technology, creative design and smart solutions.
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap">
+
+                        <a href="#services"
+                           class="btn btn-light btn-lg px-4">
+                            Explore Services
+                        </a>
+
+                        <a href="#contact"
+                           class="btn btn-outline-light btn-lg px-4">
+                            Contact Us
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Information Card -->
+                <div class="col-lg-5 mt-5 mt-lg-0">
+
+                    <div class="card border-0 shadow-lg">
+
+                        <div class="card-body p-4 text-dark">
+
+                            <div class="d-flex align-items-center mb-4">
+
+                                <div class="feature-icon me-3">
+                                    <i class="bi bi-rocket-takeoff"></i>
+                                </div>
+
+                                <div>
+                                    <h5 class="mb-1">
+                                        Ready to Grow?
+                                    </h5>
+
+                                    <p class="text-muted mb-0">
+                                        Let's build something amazing.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <div class="row text-center">
+
+                                <div class="col-6">
+                                    <h3 class="fw-bold text-primary">
+                                        120+
+                                    </h3>
+
+                                    <small class="text-muted">
+                                        Projects
+                                    </small>
+                                </div>
+
+                                <div class="col-6">
+                                    <h3 class="fw-bold text-primary">
+                                        98%
+                                    </h3>
+
+                                    <small class="text-muted">
+                                        Satisfaction
+                                    </small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="text-primary fw-semibold">
+                    WHY CHOOSE US
+                </span>
+
+                <h2 class="fw-bold mt-2">
+                    Everything You Need to Grow
+                </h2>
+
+                <p class="text-muted mx-auto"
+                   style="max-width: 650px;">
+
+                    From website development to digital strategy,
+                    our team provides complete technology solutions
+                    designed for modern businesses.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card feature-card h-100">
+
+                        <div class="card-body p-4">
+
+                            <div class="feature-icon mb-4">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+
+                            <h4 class="fw-bold">
+                                Modern Development
+                            </h4>
+
+                            <p class="text-muted">
+                                We create fast, responsive and
+                                user-friendly websites using modern
+                                web technologies.
+                            </p>
+
+                            <a href="#" class="text-primary fw-semibold">
+                                Learn More →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card feature-card h-100">
+
+                        <div class="card-body p-4">
+
+                            <div class="feature-icon mb-4">
+                                <i class="bi bi-phone"></i>
+                            </div>
+
+                            <h4 class="fw-bold">
+                                Responsive Design
+                            </h4>
+
+                            <p class="text-muted">
+                                Your website will look beautiful
+                                and work perfectly on mobile,
+                                tablet and desktop devices.
+                            </p>
+
+                            <a href="#" class="text-primary fw-semibold">
+                                Learn More →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card feature-card h-100">
+
+                        <div class="card-body p-4">
+
+                            <div class="feature-icon mb-4">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+
+                            <h4 class="fw-bold">
+                                Secure Solutions
+                            </h4>
+
+                            <p class="text-muted">
+                                We follow modern development
+                                practices to create reliable
+                                and secure digital products.
+                            </p>
+
+                            <a href="#" class="text-primary fw-semibold">
+                                Learn More →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="py-5 bg-white" id="services">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-5 mb-4 mb-lg-0">
+
+                    <span class="text-primary fw-semibold">
+                        OUR SERVICES
+                    </span>
+
+                    <h2 class="fw-bold mt-2 mb-3">
+                        Technology That Works For Your Business
+                    </h2>
+
+                    <p class="text-muted">
+                        Whether you're starting a new business or
+                        upgrading an existing digital platform,
+                        our services are designed to help you
+                        achieve your goals.
+                    </p>
+
+                    <a href="#contact"
+                       class="btn btn-primary mt-3 px-4">
+                        Discuss Your Project
+                    </a>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <div class="row g-3">
+
+                        <div class="col-sm-6">
+
+                            <div class="border rounded-4 p-4 h-100">
+
+                                <i class="bi bi-window-stack fs-2 text-primary"></i>
+
+                                <h5 class="fw-bold mt-3">
+                                    Web Development
+                                </h5>
+
+                                <p class="text-muted small">
+                                    Professional websites and
+                                    web applications.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-sm-6">
+
+                            <div class="border rounded-4 p-4 h-100">
+
+                                <i class="bi bi-palette fs-2 text-primary"></i>
+
+                                <h5 class="fw-bold mt-3">
+                                    UI / UX Design
+                                </h5>
+
+                                <p class="text-muted small">
+                                    Clean and engaging user
+                                    experiences.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-sm-6">
+
+                            <div class="border rounded-4 p-4 h-100">
+
+                                <i class="bi bi-bar-chart-line fs-2 text-primary"></i>
+
+                                <h5 class="fw-bold mt-3">
+                                    Digital Strategy
+                                </h5>
+
+                                <p class="text-muted small">
+                                    Data-driven solutions for
+                                    business growth.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-sm-6">
+
+                            <div class="border rounded-4 p-4 h-100">
+
+                                <i class="bi bi-cloud-arrow-up fs-2 text-primary"></i>
+
+                                <h5 class="fw-bold mt-3">
+                                    Cloud Solutions
+                                </h5>
+
+                                <p class="text-muted small">
+                                    Scalable cloud infrastructure
+                                    for modern applications.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section py-5" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <span class="text-primary fw-semibold">
+                        ABOUT TECHNOVA
+                    </span>
+
+                    <h2 class="fw-bold mt-2">
+                        Turning Ideas Into Digital Experiences
+                    </h2>
+
+                    <p class="text-muted mt-3">
+                        TechNova is a digital technology company
+                        focused on helping businesses build a strong
+                        online presence.
+                    </p>
+
+                    <p class="text-muted">
+                        Our team combines technology, creativity and
+                        business understanding to deliver solutions
+                        that are simple, scalable and effective.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-4">
+
+                        <button class="btn btn-primary px-4">
+                            Our Story
+                        </button>
+
+                        <button class="btn btn-outline-primary px-4">
+                            Meet Our Team
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 mt-5 mt-lg-0">
+
+                    <div class="row g-3">
+
+                        <div class="col-6">
+
+                            <div class="stat-box text-center">
+
+                                <div class="stat-number">
+                                    120+
+                                </div>
+
+                                <p class="mb-0 text-muted">
+                                    Projects Completed
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-6">
+
+                            <div class="stat-box text-center">
+
+                                <div class="stat-number">
+                                    50+
+                                </div>
+
+                                <p class="mb-0 text-muted">
+                                    Happy Clients
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-6">
+
+                            <div class="stat-box text-center">
+
+                                <div class="stat-number">
+                                    5+
+                                </div>
+
+                                <p class="mb-0 text-muted">
+                                    Years Experience
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-6">
+
+                            <div class="stat-box text-center">
+
+                                <div class="stat-number">
+                                    15
+                                </div>
+
+                                <p class="mb-0 text-muted">
+                                    Team Members
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section py-5" id="contact">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <h2 class="fw-bold">
+                        Have a Project in Mind?
+                    </h2>
+
+                    <p class="text-secondary mb-lg-0">
+                        Let's turn your idea into a powerful
+                        digital product.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                    <button class="btn btn-primary btn-lg px-4">
+                        Start a Conversation
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="py-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Company -->
+                <div class="col-lg-4">
+
+                    <h4 class="text-white fw-bold">
+                        <i class="bi bi-cpu"></i>
+                        TechNova
+                    </h4>
+
+                    <p class="mt-3">
+                        Building digital solutions that help
+                        businesses grow, connect and succeed.
+                    </p>
+
+                    <div class="d-flex gap-3 fs-4">
+
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Company Links -->
+                <div class="col-6 col-lg-2">
+
+                    <h6 class="text-white fw-bold">
+                        Company
+                    </h6>
+
+                    <ul class="list-unstyled mt-3">
+
+                        <li class="mb-2">
+                            <a href="#">About Us</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#">Our Team</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#">Careers</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Services Links -->
+                <div class="col-6 col-lg-2">
+
+                    <h6 class="text-white fw-bold">
+                        Services
+                    </h6>
+
+                    <ul class="list-unstyled mt-3">
+
+                        <li class="mb-2">
+                            <a href="#">Web Development</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#">UI / UX</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#">Cloud</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Consulting</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="col-lg-4">
+
+                    <h6 class="text-white fw-bold">
+                        Contact Us
+                    </h6>
+
+                    <p class="mt-3 mb-2">
+                        <i class="bi bi-envelope me-2"></i>
+                        hello@technova.com
+                    </p>
+
+                    <p class="mb-2">
+                        <i class="bi bi-telephone me-2"></i>
+                        +91 98765 43210
+                    </p>
+
+                    <p>
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Pune, Maharashtra, India
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <hr class="mt-5">
+
+            <div class="text-center">
+
+                <small>
+                    © 2026 TechNova. All Rights Reserved.
+                </small>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
